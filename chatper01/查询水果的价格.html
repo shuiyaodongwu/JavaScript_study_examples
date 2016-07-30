@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询水果的价格</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function ( ) {
+            var txt = document.getElementById("txt");
+            var btn = document.getElementById("btn");
+            // var val = txt.value;
+            btn.onclick = function (){
+                 var val = txt.value;
+                console.log(val)
+                switch (val){
+                case "苹果": 
+                    alert("苹果的价格是5万元");
+                    break;
+                case "香蕉":
+                    alert("香蕉的价格是8元");
+                    break;
+                defaul:
+                alert("暂时没有你要的水果");
+                break;
+                } 
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt"> <button id="btn">查询水果的价格</button>
+</body>
+</html>
